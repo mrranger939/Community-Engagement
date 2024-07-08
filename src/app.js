@@ -38,7 +38,7 @@ const mongoose = require("mongoose");
 const { error } = require("console");
 const { Socket } = require("dgram");
 
-const uri = 'mongodb://localhost:27017/cbithack';
+const uri = process.env.MONGO;
 mongoose.connect(uri).then(()=>{
     console.log("connection successful with database")
 }).catch((error)=>{
