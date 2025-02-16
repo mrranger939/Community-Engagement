@@ -428,7 +428,6 @@ app.get('/error404', (req, res) => {
 
 /* 
 
-
 /* socket.io doing hahaaha iam too dumb do anyone really read this!! */
 
 
@@ -439,6 +438,6 @@ app.post("/reload", (req, res)=>{
 /* reload */
 /* listen port */
 httpServer.listen(process.env.PORT || 8000, function () {
-  console.log("Server started on port 8000");
+  console.log("Server started on port http://localhost:8000/");
 });
 /* listen port */
